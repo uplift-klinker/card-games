@@ -26,5 +26,13 @@
       }
     ]
   },
-  "projects": {}
+  "projects": {
+    "card-games": {
+      "tags": []
+    },
+    "card-games-e2e": {
+      "tags": [],
+      "implicitDependencies": ["card-games"]
+    }
+  }
 }
