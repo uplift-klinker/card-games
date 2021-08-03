@@ -99,6 +99,38 @@
           }
         }
       }
+    },
+    "deck": {
+      "root": "libs/deck",
+      "sourceRoot": "libs/deck/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/deck",
+            "tsConfig": "libs/deck/tsconfig.lib.json",
+            "packageJson": "libs/deck/package.json",
+            "main": "libs/deck/src/index.ts",
+            "assets": ["libs/deck/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/deck/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/deck"],
+          "options": {
+            "jestConfig": "libs/deck/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {},
