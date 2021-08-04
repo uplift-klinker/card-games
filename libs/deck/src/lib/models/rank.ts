@@ -1,5 +1,5 @@
 export enum Rank {
-  One = 1,
+  Ace = 'Ace',
   Two = 2,
   Three = 3,
   Four = 4,
@@ -9,15 +9,15 @@ export enum Rank {
   Eight = 8,
   Nine = 9,
   Ten = 10,
-  Jack = 11,
-  Queen = 12,
-  King = 13,
-  High = 14,
-  Low = 15
+  Jack = 'Jack',
+  Queen = 'Queen',
+  King = 'King',
+  High = 'High',
+  Low = 'Low'
 }
 
 export const AllRanks = [
-  Rank.One,
+  Rank.Ace,
   Rank.Two,
   Rank.Three,
   Rank.Four,

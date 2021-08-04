@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind base;
 @tailwind utilities;
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}

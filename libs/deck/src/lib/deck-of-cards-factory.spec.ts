@@ -20,7 +20,7 @@ describe('DeckOfCardsFactory', () => {
   test('when standard deck created then deck has 4 cards in each rank', () => {
     const deck = DeckOfCardsFactory.create();
 
-    expectDeckToHaveCardsWithRank(deck, Rank.One, 4);
+    expectDeckToHaveCardsWithRank(deck, Rank.Ace, 4);
     expectDeckToHaveCardsWithRank(deck, Rank.Two, 4);
     expectDeckToHaveCardsWithRank(deck, Rank.Three, 4);
     expectDeckToHaveCardsWithRank(deck, Rank.Four, 4);
