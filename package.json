@@ -11,7 +11,8 @@
     "format": "nx format:write",
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "verify": "npm run format && npm run lint && npm run test && npm run e2e"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +43,7 @@
     "@nrwl/tao": "12.6.3",
     "@nrwl/web": "12.6.3",
     "@nrwl/workspace": "12.6.3",
+    "@testing-library/cypress": "8.0.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "11.2.6",
     "@testing-library/user-event": "13.2.1",
